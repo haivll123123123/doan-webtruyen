@@ -46,7 +46,7 @@
                             </div>
 							<div class="form-group">
 								<label for="#">Nội Dung</label>
-								<textarea name="content" class="form-control" id="#" rows="5" placeholder="Nội Dung Truyện">
+								<textarea name="content" class="form-control ckeditor" id="#" rows="5" placeholder="Nội Dung Truyện">
 								</textarea>
                             </div>
                             <div class="help-info">

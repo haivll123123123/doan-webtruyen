@@ -37,7 +37,7 @@
 							</div>
 							<div class="form-group">
 								<label for="#">Mô Tả Của Tác Giả</label>
-								<textarea name="description" class="form-control" id="#" rows="5" placeholder="Mô Tả Ngắn">{{$authors->description}}</textarea>
+								<textarea name="description" class="form-control ckeditor" id="#" rows="5" placeholder="Mô Tả Ngắn">{{$authors->description}}</textarea>
 							</div>
 						</div>
 						<!-- /.card-body -->

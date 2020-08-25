@@ -78,7 +78,7 @@
                             </div>
 							<div class="form-group">
 								<label for="#">Mô Tả Ngắn Của Truyện</label>
-								<textarea name="description" value="{{ old('description') }}"  class="form-control" id="#" rows="5" placeholder="Mô Tả Ngắn">
+								<textarea name="description" value="{{ old('description') }}"  class="form-control ckeditor" id="#" rows="5" placeholder="Mô Tả Ngắn">
 								</textarea>
                             </div>
                             <div class="help-info">
@@ -88,7 +88,7 @@
                             </div>
 							<div class="form-group">
 								<label for="#">Mô Tả Nội Dung Của Truyện</label>
-								<textarea name="content" value="{{ old('content') }}" class="form-control" id="#" rows="5" placeholder="Mô Tả Ngắn">
+								<textarea name="content" value="{{ old('content') }}" class="form-control ckeditor" id="#" rows="5" placeholder="Mô Tả Ngắn">
 								</textarea>
                             </div>
                             <div class="help-info">
