@@ -106,7 +106,7 @@ class CategoryController extends Controller
             'keyword' => 'required|max:255|',
             'description' => 'required|max:255|',
         ],$messages);
-        
+
         $dataupdate = [
             'name' => $request->name,
             'keyword' => $request->keyword,

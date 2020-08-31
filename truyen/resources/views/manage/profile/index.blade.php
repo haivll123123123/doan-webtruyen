@@ -4,9 +4,10 @@
 	<div class="container-fluid">
 		<div class="row mb-2">
 			<div class="col-sm-6">
-				<h1>Profile</h1>
-			</div>
-		</div>
+                <h1>Profile</h1>
+            </div>
+        </div>
+        @include('partials.alerts')
 	</div>
 	<!-- /.container-fluid -->
 </section>
@@ -17,18 +18,38 @@
 			<div class="col-md-3">
 				<!-- Profile Image -->
 				<div class="card card-primary card-outline">
-					<div class="card-body box-profile">
-						<div class="text-center">
-							<img class="profile-user-img img-fluid img-circle"
-								src="{{URL::to('/images/avatar/' . auth()->user()->image)}}"
-								id="upfile1" alt="Avatar-User">
-						</div>
-						<h3 class="profile-username text-center">{{auth()->user()->name}}</h3>
-						<p class="text-muted text-center">{{auth()->user()->roles()->first()->name}}</p>
-					</div>
+                    <div class="card-body box-profile">
+                        <form action="{{route('manage.profile.updateimages')}}" enctype="multipart/form-data" method="POST">
+                            @csrf
+                            <div class="text-center">
+                                <img class="profile-user-img img-fluid img-circle"
+                                    src="
+                                    @if(auth()->user()->image == '')
+                                    {{URL::to('/images/avatar/avatar-default.jpg')}}
+                                    @else
+                                    {{URL::to('/images/avatar/' .  auth()->user()->image)}}
+                                    @endif"
+                                    id="upfile1" alt="Avatar-User">
+                            </div>
+                            <h3 class="profile-username text-center">{{auth()->user()->name}}</h3>
+                            <p class="text-muted text-center">{{auth()->user()->roles()->first()->name}}</p>
+                            <ul class="list-group list-group-unbordered mb-3">
+                                <li class="list-group-item">
+                                    <input type="file" name="image" id="image-input">
+                                </li>
+                                @if ($errors->has('image'))
+                                <li class="list-group-item">
+                                <div class="help-info">
+                                    <i class="help is-danger" STYLE="COLOR:RED;">{{ $errors->first('image') }}</i>
+                                </div>
+                                </li>
+                                @endif
+                            </ul>
+                            <button type="submit" id="submit-image" class="btn btn-primary btn-block"><b>Thay Ảnh Đại Diện</b></a>
+                        </form>
+                    </div>
                     <!-- /.card-body -->
                 </div>
-                @include('partials.alerts')
 			</div>
 			<!-- /.col -->
 			<div class="col-md-9">
@@ -65,17 +86,6 @@
                                     <div class="help-info">
                                         @if ($errors->has('email'))
                                         <p class="help is-danger" STYLE="COLOR:RED;">{{ $errors->first('email') }}</p>
-                                        @endif
-                                    </div>
-									<div class="form-group row">
-										<label for="inputEmail" class="col-sm-2 col-form-label">Hình Đại Diện</label>
-										<div class="col-sm-10">
-											<input type="file" name="image" id="inputEmail" placeholder="Đuôi .jpg .png...">
-										</div>
-                                    </div>
-                                    <div class="help-info">
-                                        @if ($errors->has('image'))
-                                        <p class="help is-danger" STYLE="COLOR:RED;">{{ $errors->first('image') }}</p>
                                         @endif
                                     </div>
 									<div class="form-group row">

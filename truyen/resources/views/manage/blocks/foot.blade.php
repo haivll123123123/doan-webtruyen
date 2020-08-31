@@ -147,3 +147,5 @@
 	})
 </script>
 <script src="{{asset('ckeditor/ckeditor.js')}}"></script>
+<script src="{{asset('jquery/jquery-3.5.1.min.js')}}"></script>
+<script src="{{asset('jquery/post.js')}}" type="text/javascript"></script>

@@ -7,7 +7,6 @@ use App\User;
 use Illuminate\Http\Request;
 use App\Rules\MatchOldPassword;
 use App\Http\Controllers\Controller;
-use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 
@@ -23,16 +22,60 @@ class ProfileController extends Controller
         return view('manage.profile.index');
     }
 
+    public function updateimages(Request $request,User $user)
+    {
+        $messages = [
+            'image.required' => 'Bắt buộc gắn ảnh',
+            'image.mimes' => 'Hình ảnh phải là một loại tệp: png, jpg.',
+        ];
+        $validatedData =$request->validate([
+            'image' => 'mimes:jpeg,jpg,png|required|max:10000',
+        ],$messages);
+
+        $file = $request->image;
+
+        $file->move('images/avatar' , $file->getClientOriginalName());
+
+        $data= array(
+            'image' => $file->getClientOriginalName(),
+        );
+
+        if(auth()->user()->image == ''){
+
+            User::where('id',auth()->user()->id)->update($data);
+
+            $request->session()->flash('success' , 'Image Avatar has been updated');
+        }else{
+            if(auth()->user()->image == $file->getClientOriginalName()){
+
+                User::where('id',auth()->user()->id)->update($data);
+
+                $request->session()->flash('success' , 'Image Avatar has been updated');
+            }else{
+                $Image = public_path("/images/avatar/" . auth()->user()->image); //Finding users previous picture
+
+                if(file_exists($Image)){ //If it exits, delete it from folder
+                    unlink($Image);
+                }
+                User::where('id',auth()->user()->id)->update($data);
+
+                $request->session()->flash('success' , 'Image Avatar has been updated');
+            }
+        }
+
+        return redirect()->route('manage.profile.index');
+
+    }
     /**
      * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function updatesettings(Request $request,User $user)
+    public function updatesettings(Request $request)
     {
         $messages = [
-            'name.required' => 'Tiêu đề bắt buộc nhập',
+            'name.required' => 'Tên bắt buộc nhập',
             'name.max' => 'Từ khóa không được vượt quá 30 ký tự',
             'image.required' => 'Bắt buộc gắn ảnh',
             'image.mimes' => 'Hình ảnh phải là một loại tệp: png, jpg.'
@@ -42,13 +85,8 @@ class ProfileController extends Controller
             'image' => 'mimes:jpeg,jpg,png|required|max:10000',
         ],$messages);
 
-        $file = $request->image;
-
-        $file->move('images/avatar' , $file->getClientOriginalName());
-
         $data = ([
             'name' => $request->name,
-            'image' => $file->getClientOriginalName()
         ]);
 
         $id_user = auth()->user()->id;
@@ -93,7 +131,7 @@ class ProfileController extends Controller
                 $request->session()->flash('success' , 'Password has been updated!!!');
             }else{
                  // Insert thất bại sẽ hiển thị thông báo lỗi
-
+                 $request->session()->flash('error' , 'Password has been updated!!!');
             }
             return redirect()->route('manage.profile.index');
         }

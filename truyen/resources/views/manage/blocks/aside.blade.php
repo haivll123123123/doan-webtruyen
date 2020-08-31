@@ -10,7 +10,13 @@
 		<!-- Sidebar user panel (optional) -->
 		<div class="user-panel mt-3 pb-3 mb-3 d-flex">
 			<div class="image">
-				<img src="{{URL::to('/images/avatar/' .  auth()->user()->image)}}" class="img-circle elevation-2" alt="User Image">
+                <img src="
+                @if(auth()->user()->image == '')
+                {{URL::to('/images/avatar/avatar-default.jpg')}}
+                @else
+                {{URL::to('/images/avatar/' .  auth()->user()->image)}}
+                @endif
+                " class="img-circle elevation-2" alt="User Image">
 			</div>
 			<div class="info">
 				<a href="{{route('manage.profile.index')}}" class="d-block">{{auth()->user()->name}}</a>

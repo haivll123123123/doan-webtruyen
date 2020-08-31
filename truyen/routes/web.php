@@ -68,10 +68,9 @@ Route::namespace('Manage')->prefix('manage')->name('manage.')->group(function(){
     });
     Route::prefix('profile')->name('profile.')->group(function(){
         Route::get('index','ProfileController@index')->name('index');
-        Route::get('settings','ProfileController@settings')->name('settings');
-        Route::get('changespassword','ProfileController@changepassword')->name('changepassword');
         Route::post('updatesettings','ProfileController@updatesettings')->name('updatesettings');
         Route::post('updatepassword','ProfileController@updatepassword')->name('updatepassword');
-        Route::post('updateavatar','ProfileController@updateavatar')->name('updateavatar');
+        Route::post('updateimages','ProfileController@updateimages')->name('updateimages');
+        Route::post('storeimages','ProfileController@storeimages')->name('storeimages');
     });
 });

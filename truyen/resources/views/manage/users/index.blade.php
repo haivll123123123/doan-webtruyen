@@ -67,10 +67,10 @@
 								</tr>
 							</tfoot>
                         </table>
+                    </div>
 
-					</div>
 					<!-- /.card-body -->
-				</div>
+                </div>
 				<!-- /.card -->
 				<!-- /.card -->
 			</div>

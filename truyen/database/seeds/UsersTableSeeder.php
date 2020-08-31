@@ -26,35 +26,30 @@ class UsersTableSeeder extends Seeder
         $admin = User::create([
             'name' => 'Admin User',
             'email' => 'admin@gmail.com',
-            'image' => 'avatar-default.jpg',
             'password' => Hash::make('123456aA')
         ]);
 
         $adminedit = User::create([
             'name' => 'Admin Edit User',
             'email' => 'adminedit@gmail.com',
-            'image' => 'avatar-default.jpg',
             'password' => Hash::make('123456aA')
         ]);
 
         $admindelete = User::create([
             'name' => 'Admin Delete User',
             'email' => 'admindelete@gmail.com',
-            'image' => 'avatar-default.jpg',
             'password' => Hash::make('123456aA')
         ]);
 
         $writer = User::create([
             'name' => 'Writer User',
             'email' => 'writer@gmail.com',
-            'image' => 'avatar-default.jpg',
             'password' => Hash::make('123456aA')
         ]);
 
         $user = User::create([
             'name' => 'User Normal',
             'email' => 'user@gmail.com',
-            'image' => 'avatar-default.jpg',
             'password' => Hash::make('123456aA')
         ]);
 
