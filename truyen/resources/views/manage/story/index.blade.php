@@ -83,7 +83,7 @@
                                     <th class="text-left">Chuyên Mục</th>
                                     <th class="text-left">Tác Giả</th>
                                     <th class="text-left">Trạng Thái</th>
-                                    @can('admin')<th class="text-left">Người Đăng</th>@endcan
+                                    <th class="text-left">Người Đăng</th>
                                     @if(auth()->user()->can('edit-users') || auth()->user()->can('delete-users'))
                                     <th class="text-left">Action</th>
                                     @endif
