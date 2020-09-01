@@ -55,6 +55,8 @@
 <script src="{{asset('plugins/jquery-validation/additional-methods.min.js')}}"></script>
 <!-- Select2 -->
 <script src="{{asset('plugins/select2/js/select2.full.min.js')}}"></script>
+<script src="{{asset('jquery/jquery-3.5.1.min')}}"></script>
+<script src="{{asset('ckeditor/ckeditor.js')}}"></script>
 <!-- page script -->
 <script>
 	$(function () {
@@ -146,6 +148,4 @@
 
 	})
 </script>
-<script src="{{asset('ckeditor/ckeditor.js')}}"></script>
-<script src="{{asset('jquery/jquery-3.5.1.min.js')}}"></script>
-<script src="{{asset('jquery/post.js')}}" type="text/javascript"></script>
+
