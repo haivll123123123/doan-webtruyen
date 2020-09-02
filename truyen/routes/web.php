@@ -33,20 +33,24 @@ Route::namespace('Manage')->prefix('manage')->name('manage.')->group(function(){
         Route::get('{user}','UsersController@destroy')->name('destroy');
     });
     Route::prefix('category')->name('category.')->middleware('can:admin')->group(function(){
-        Route::get('list','CategoryController@index')->name('index');
-        Route::get('create','CategoryController@create')->name('create');
+        Route::get('index','CategoryController@index')->name('index');
+        // Route::get('create','CategoryController@create')->name('create');
         Route::post('store','CategoryController@store')->name('store');
-        Route::get('{category}/edit','CategoryController@edit')->name('edit');
-        Route::put('{category}','CategoryController@update')->name('update');
-        Route::get('{category}','CategoryController@destroy')->name('destroy');
+        Route::post('edit','CategoryController@update')->name('update');
+        Route::post('delete','CategoryController@destroy')->name('destroy');
+        // Route::get('{category}/edit','CategoryController@edit')->name('edit');
+        // Route::put('{category}','CategoryController@update')->name('update');
+        // Route::get('{category}','CategoryController@destroy')->name('destroy');
     });
     Route::prefix('author')->name('author.')->middleware('can:admin')->group(function(){
         Route::get('index','AuthorController@index')->name('index');
-        Route::get('create','AuthorController@create')->name('create');
+        // Route::get('create','AuthorController@create')->name('create');
         Route::post('store','AuthorController@store')->name('store');
-        Route::get('{author}/edit','AuthorController@edit')->name('edit');
-        Route::put('{author}','AuthorController@update')->name('update');
-        Route::get('{author}','AuthorController@destroy')->name('destroy');
+        Route::post('edit','AuthorController@update')->name('update');
+        Route::post('delete','AuthorController@destroy')->name('destroy');
+        // Route::get('{author}/edit','AuthorController@edit')->name('edit');
+        // Route::put('{author}','AuthorController@update')->name('update');
+        // Route::get('{author}','AuthorController@destroy')->name('destroy');
     });
     Route::prefix('story')->name('story.')->middleware('can:admin-writer-edit-delete')->group(function(){
         Route::get('index','StoryController@index')->name('index');

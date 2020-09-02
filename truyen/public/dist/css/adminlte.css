@@ -5309,7 +5309,7 @@ a.badge-dark:focus, a.badge-dark.focus {
 .alert {
   position: relative;
   padding: 0.75rem 1.25rem;
-  margin-bottom: 1rem;
+  margin-top: 1rem;
   border: 1px solid transparent;
   border-radius: 0.25rem;
 }
@@ -31222,6 +31222,9 @@ a.text-muted:hover {
 .btn-file {
     position: relative;
     overflow: hidden;
+}
+.hidden{
+  display: none;
 }
 .btn-file input[type=file] {
     position: absolute;
