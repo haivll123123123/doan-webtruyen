@@ -10,6 +10,7 @@ use App\Http\Controllers\Controller;
 
 class ChapterController extends Controller
 {
+
     /**
      * Display a listing of the resource.
      *
@@ -125,7 +126,7 @@ class ChapterController extends Controller
             'name' => 'required',
             'content' => 'required|max:255|',
         ],$messages);
-        
+
         $data = array(
             'subname' => $request->subname,
             'name' => $request->name,

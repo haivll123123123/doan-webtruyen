@@ -53,7 +53,7 @@
                                 <tr>
                                     <td>{{$chapter->subname}}</td>
                                     <td>{{$chapter->name}}</td>
-                                    <td>{{$chapter->created_at}}</td>
+                                    <td>{{$chapter->created_at->format('d-m-Y')}}</td>
                                     <td class="text-center py-0 align-middle">
                                         <a href="{{route('manage.story.chapter.edit',['chapter' => $chapter->id, 'story' => $stories->id])}}" class="btn btn-info"><i class="fas fa-user-edit"></i></a>
                                         <a href="{{route('manage.story.chapter.destroy',$chapter->id)}}" class="btn btn-danger"><i class="fas fa-trash"></i></a>

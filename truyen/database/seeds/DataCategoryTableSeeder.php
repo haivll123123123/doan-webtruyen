@@ -52,6 +52,8 @@ class DataCategoryTableSeeder extends Seeder
             ['name' => 'Võ Thuật' , 'keyword' => 'Võ Thuật' , 'description' => 'Võ Thuật'],
             ['name' => 'Cung Đấu' , 'keyword' => 'Cung Đấu' , 'description' => 'Cung Đấu'],
             ['name' => 'Hài Hước' , 'keyword' => 'Hài Hước' , 'description' => 'Hài Hước'],
+            ['name' => 'Trọng Sinh' , 'keyword' => 'Trọng Sinh' , 'description' => 'Trọng Sinh'],
+            ['name' => 'Sủng' , 'keyword' => 'Sủng' , 'description' => 'Sủng'],
         ];
 
         Category::insert($category);

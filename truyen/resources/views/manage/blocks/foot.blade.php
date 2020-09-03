@@ -400,31 +400,33 @@
             $('.form-horizontal').hide();
             $('.title').html($(this).data('name'));
             $('#myModal-author').modal('show');
-        });
+    });
       //delete category
-      $('.modal-footer').on('click', '.delete-category', function(){
+    $('.modal-footer').on('click', '.delete-category', function(){
         $.ajax({
-                type: 'POST',
-                url: "{{ route('manage.category.destroy') }}",
-                data: {
-                'id': $('.id').text()
-                },
-                success: function(data){
-                    $('.category' + $('.id').text()).remove();
-                }
-            });
-      });
+            type: 'POST',
+            url: "{{ route('manage.category.destroy') }}",
+            data: {
+            'id': $('.id').text()
+            },
+            success: function(data){
+                $('.category' + $('.id').text()).remove();
+            }
+        });
+    });
     //delete author
-      $('.modal-footer').on('click', '.delete-author', function(){
+    $('.modal-footer').on('click', '.delete-author', function(){
         $.ajax({
-                type: 'POST',
-                url: "{{ route('manage.author.destroy') }}",
-                data: {
-                'id': $('.id').text()
-                },
-                success: function(data){
-                    $('.author' + $('.id').text()).remove();
-                }
-            });
-      });
+            type: 'POST',
+            url: "{{ route('manage.author.destroy') }}",
+            data: {
+            'id': $('.id').text()
+            },
+            success: function(data){
+                $('.author' + $('.id').text()).remove();
+            }
+        });
+    });
+
+    
 </script>

@@ -64,6 +64,8 @@ class DataAuthorTableSeeder extends Seeder
             ['name' => 'Phao Phao Phao' ,'keyword' => 'Phao Phao Phao' , 'description' => 'Phao Phao Phao'],
             ['name' => 'Diêu Vọng Nam Sơn' ,'keyword' => 'Diêu Vọng Nam Sơn' , 'description' => 'Diêu Vọng Nam Sơn'],
             ['name' => 'Tinh Trang Kích Quang Điêu Khắc Ky' ,'keyword' => 'Tinh Trang Kích Quang Điêu Khắc Ky' , 'description' => 'Tinh Trang Kích Quang Điêu Khắc Ky'],
+            ['name' => 'Nhĩ Căn' ,'keyword' => 'Nhĩ Căn' , 'description' => 'Nhĩ Căn'],
+            ['name' => 'Vũ Phong' ,'keyword' => 'Vũ Phong' , 'description' => 'Vũ Phong'],
         ];
 
         Author::insert($author);
