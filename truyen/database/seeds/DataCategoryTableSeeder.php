@@ -45,15 +45,15 @@ class DataCategoryTableSeeder extends Seeder
             ['name' => 'Tiểu Thuyết' , 'keyword' => 'Tiểu Thuyết' , 'description' => 'Tiểu Thuyết'],
             ['name' => 'Truyện Ma' , 'keyword' => 'Truyện Ma' , 'description' => 'Truyện Ma'],
             ['name' => 'Truyện Teen' , 'keyword' => 'Truyện Teen' , 'description' => 'Truyện Teen'],
-            ['name' => 'Truyện Tình Cảm' , 'keyword' => 'Truyện Tình Cảm' , 'description' => 'Truyện Tình Cảm'],
-            ['name' => 'Văn Học Việt Nam' , 'keyword' => 'Văn Học Việt Nam' , 'description' => 'Văn Học Việt Nam'],
-            ['name' => 'Truyện Tây Phương' , 'keyword' => 'Truyện Tây Phương' , 'description' => 'Truyện Tây Phương'],
             ['name' => 'Võ Hiệp' , 'keyword' => 'Võ Hiệp' , 'description' => 'Võ Hiệp'],
             ['name' => 'Võ Thuật' , 'keyword' => 'Võ Thuật' , 'description' => 'Võ Thuật'],
             ['name' => 'Cung Đấu' , 'keyword' => 'Cung Đấu' , 'description' => 'Cung Đấu'],
             ['name' => 'Hài Hước' , 'keyword' => 'Hài Hước' , 'description' => 'Hài Hước'],
             ['name' => 'Trọng Sinh' , 'keyword' => 'Trọng Sinh' , 'description' => 'Trọng Sinh'],
             ['name' => 'Sủng' , 'keyword' => 'Sủng' , 'description' => 'Sủng'],
+            ['name' => 'Truyện Tình Cảm' , 'keyword' => 'Truyện Tình Cảm' , 'description' => 'Truyện Tình Cảm'],
+            ['name' => 'Văn Học Việt Nam' , 'keyword' => 'Văn Học Việt Nam' , 'description' => 'Văn Học Việt Nam'],
+            ['name' => 'Truyện Tây Phương' , 'keyword' => 'Truyện Tây Phương' , 'description' => 'Truyện Tây Phương'],
         ];
 
         Category::insert($category);

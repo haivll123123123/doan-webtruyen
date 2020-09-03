@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Manage;
 
 use App\Models\Story;
 use App\Models\Chapter;
+use App\Models\Category;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -24,9 +25,21 @@ class ThemesController extends Controller
         $story12 = Story::where('name','PHÀM NHÂN TU TIÊN')->first();
         $story13 = Story::where('name','VŨ LUYỆN ĐIÊN PHONG')->first();
         $chapter = Chapter::with('story')->get();
+        // $category1 = Category::where('id','<=','13')->get();
+        // $category2 = Category::where([
+        //     ['id' , '>=' , '14'],
+        //     ['id' , '<' , '27']
+        // ])->get();
+        // $category3 = Category::where([
+        //     ['id' , '>=' , '26'],
+        //     ['id', '<=' , '38']
+        // ])->get();
 
+        $category1 = Category::whereBetween('id',[1,13])->get();
+        $category2 = Category::whereBetween('id',[14,26])->get();
+        $category3 = Category::whereBetween('id',[27,37])->get();
 
-        return view('themes.index')->with([
+        return view('themes.trangchu')->with([
             'story1' => $story1,
             'story2' => $story2,
             'story3' => $story3,
@@ -40,7 +53,10 @@ class ThemesController extends Controller
             'story11' => $story11,
             'story12' => $story12,
             'story13' => $story13,
-            'chapter' => $chapter
+            'chapter' => $chapter,
+            'category1' => $category1,
+            'category2' => $category2,
+            'category3' => $category3,
         ]);
     }
 }

@@ -35,7 +35,7 @@ class StoryTableSeeder extends Seeder
             <br />
             Một người cha &quot;chưa từng c&oacute; cảm gi&aacute;c rung động trước bất kỳ ai&quot; v&agrave; một thằng b&eacute; con &quot;kh&ocirc;ng th&iacute;ch tiếp x&uacute;c với bất kỳ ai&quot; đ&atilde; trở n&ecirc;n &quot;lầy lội&quot; hơn bao giờ hết khi gặp được Ninh Tịch. Cả hai cha con đều vừa gặp đ&atilde; y&ecirc;u người phụ nữ n&agrave;y, một người mong muốn chiếm hữu, một người v&ocirc; c&ugrave;ng ỷ lại, cuối c&ugrave;ng tạo ra những t&igrave;nh huống dở kh&oacute;c dở cười cho độc giả.</p>',
             'source' => 'truyenfull.vn',
-            'status' => '0',
+            'status' => '1',
             'image'=> 'choc-tuc-vo-yeu-mua-mot-tang-mot-150520.jpg',
             'keyword' => 'CHỌC TỨC VỢ YÊU',
             'description' => '<p><strong>T&ecirc;n kh&aacute;c:&nbsp;</strong>Cho em mu&ocirc;n trượng h&agrave;o quang,&nbsp;Qu&acirc;n tử b&aacute;o &acirc;n<br />
@@ -55,7 +55,7 @@ class StoryTableSeeder extends Seeder
             <br />
             Đời n&agrave;y mặc cho c&aacute;c ngươi tr&acirc;u b&ograve; rắn rết trăm phương ngh&igrave;n kế, muốn c&ocirc; ly dị, nhường đi ng&ocirc;i vị phu nh&acirc;n. Ngượng ng&ugrave;ng qu&aacute; ~~, chỉ số th&ocirc;ng minh của bản tiểu thư đ&atilde; l&ecirc;n d&acirc;y rồi nh&eacute;!</p>',
             'source' => 'truyenfull.vn',
-            'status' => '0',
+            'status' => '1',
             'image'=> 'co-vo-ngot-ngao-co-chut-bat-luong-vo-moi-bat-luong-co-chut-ngot.jpg  ',
             'keyword' => 'CÔ VỢ NGỌT NGÀO CÓ CHÚT BẤT LƯƠNG',
             'description' => '<p><strong>T&ecirc;n kh&aacute;c:&nbsp;</strong>C&ocirc; Vợ Bất Lương C&oacute; Ch&uacute;t Ngọt Ng&agrave;o</p>',
@@ -72,7 +72,7 @@ class StoryTableSeeder extends Seeder
             <br />
             &quot; Ngủ với t&ocirc;i 2 đ&ecirc;m t&ocirc;i sẽ gi&uacute;p c&ocirc; giải quyết được đ&aacute;m cặn b&atilde; kia &quot;...&quot; Ngủ với t&ocirc;i &quot;...&quot; Nhạc Th&iacute;nh Phong &quot;Anh hết tr&ograve; rồi hả?&quot;</p>',
             'source' => 'truyenfull.vn',
-            'status' => '0',
+            'status' => '1',
             'image'=> 'boss-hung-du-ong-xa-ket-hon-di-270720.jpg',
             'keyword' => 'BOSS HUNG DỮ - ÔNG XÃ KẾT HÔN ĐI',
             'description' => '<p>M&ocirc; Tả ngắn</p>',
@@ -90,7 +90,7 @@ class StoryTableSeeder extends Seeder
             <br />
             Vận mệnh cho Qu&yacute; No&atilde;n cơ hội được sửa chữa sai lầm, bởi vậy, c&ocirc; kh&ocirc;ng thể bỏ lỡ. C&ocirc; ra sức n&iacute;u giữ cuộc h&ocirc;n nh&acirc;n đ&atilde; từng bị ch&iacute;nh m&igrave;nh đẩy đến bờ vực đổ vỡ, c&ocirc; t&igrave;m c&aacute;ch ki&ecirc;n cường, độc lập, trả th&ugrave; những ai từng muốn hại c&ocirc; v&agrave; nh&agrave; họ Qu&yacute;. Đối với Mặc Cảnh Th&acirc;m, c&ocirc; lại c&agrave;ng tr&acirc;n trọng, bởi khi tĩnh t&acirc;m nh&igrave;n lại, c&ocirc; mới nhận ra Mặc Cảnh Th&acirc;m ch&iacute;nh l&agrave; người đ&agrave;n &ocirc;ng lu&ocirc;n đứng sau bảo vệ m&igrave;nh, d&ugrave; c&ocirc; ng&ocirc;ng cuồng, bất chấp l&yacute; lẽ, anh vẫn sẽ dịu d&agrave;ng, che chở v&agrave; bao dung mọi thứ.</p>',
             'source' => 'Web Novel, UTruyện, FB: doctruyenfreeoday',
-            'status' => '0',
+            'status' => '1',
             'image'=> 'gio-am-khong-bang-anh-tham-tinh-220820.jpg',
             'keyword' => 'GIÓ ẤM KHÔNG BẰNG ANH THÂM TÌNH',
             'description' => '<p>M&ocirc; Tả Ngắn</p>',
@@ -119,7 +119,7 @@ class StoryTableSeeder extends Seeder
             <br />
             - C&acirc;u chuyện l&agrave; một trang s&aacute;ch n&oacute;i về cuộc đời của một tu luyện giả, b&ecirc;n cạnh đ&oacute; c&ograve;n mi&ecirc;u tả cuộc sống đời thường, những suy nghĩ b&igrave;nh thường, nhưng nếu như số mệnh đ&atilde; sắp đặt bản th&acirc;n phải đi tr&ecirc;n một con đường đầy gian khổ v&agrave; trắc trở th&igrave; sao? Con người đặc biệt lu&ocirc;n c&oacute; số mệnh đặc biệt, bất kể xuất th&acirc;n, bất kể địa vị. Ch&uacute;ng ta h&atilde;y c&ugrave;ng d&otilde;i theo những bước ch&acirc;n của họ, kh&ocirc;ng chỉ đơn giản l&agrave; xem những pha đ&aacute;nh nhau đẹp mắt, hay những chi&ecirc;u thức tr&aacute;ng lệ, cũng kh&ocirc;ng phải chỉ để b&agrave;n luận đến những &acirc;m mưu hay kế s&aacute;ch th&acirc;m độc, h&egrave;n hạ bỉ ổi, tuyệt vời ra sao. Thứ ch&uacute;ng ta cần l&agrave; một c&aacute;i g&igrave; đ&oacute; lớn hơn thế, tất cả mọi thứ h&ograve;a quyện lại với nhau tạo ra một sự li&ecirc;n kết tuyệt vời, v&agrave; sự li&ecirc;n kết đ&oacute; ch&iacute;nh l&agrave; V&otilde; Động C&agrave;n Kh&ocirc;n. C&ograve;n chờ g&igrave; nữa, c&aacute;c bạn h&atilde;y nhanh đọc lướt qua phần giới thiệu để</p>',
             'source' => 'truyenfull.vn',
-            'status' => '0',
+            'status' => '1',
             'image'=> 'vu-dong-can-khon.jpg',
             'keyword' => 'VŨ ĐỘNG CÀN KHÔN',
             'description' => '<p>Giới Thiệu Truyện<br />
@@ -155,7 +155,7 @@ class StoryTableSeeder extends Seeder
             Kh&ocirc;ng chỉ vậy&nbsp;m&agrave; đ&ecirc;m trước khi Khương Tự xuất gi&aacute;, vị h&ocirc;n phu c&ugrave;ng nữ nh&acirc;n kh&aacute;c nhảy s&ocirc;ng tự tử...</p>',
             'source' => 'Wattpad.com/user/khuynhvu1892',
             'image'=> 'tu-cam.jpg',
-            'status' => '0',
+            'status' => '1',
             'keyword' => 'TỰ CẨM',
             'description' => '<p><strong>Thể loại:</strong>&nbsp;Tr&ugrave;ng sinh, ng&ocirc;n t&igrave;nh, cổ đại, HE, t&igrave;nh cảm, cung đ&igrave;nh hầu tước.&nbsp;<strong>Số chương:&nbsp;</strong>828 + 10 pn<br />
             &nbsp;</p>',
@@ -169,7 +169,7 @@ class StoryTableSeeder extends Seeder
             <br />
             Chỉ c&oacute; niệm của ta... l&agrave; Vĩnh hằng.</p>',
             'source' => 'Bạch Ngọc Sách',
-            'status' => '0',
+            'status' => '1',
             'image'=> 'nhat-niem-vinh-hang.jpg',
             'keyword' => 'NHẤT NIỆM VĨNH HẰNG',
             'description' => '<p><strong>一念永恒</strong></p>',
@@ -190,7 +190,7 @@ class StoryTableSeeder extends Seeder
             B&aacute; chủ ki&ecirc;u h&ugrave;ng<br />
             Đ&atilde; đến, ta sẽ lưu lại một huyền thoại......</p>',
             'source' => 'Vip Văn Đàn',
-            'status' => '0',
+            'status' => '1',
             'image'=> 'linh-vu-thien-ha.jpg',
             'keyword' => 'LINH VŨ THIÊN HẠ',
             'description' => '<p><strong><em>Nh&oacute;m dịch:</em></strong><em>&nbsp;S&oacute;i Gi&agrave;<br />
@@ -221,7 +221,7 @@ class StoryTableSeeder extends Seeder
             <br />
             - Tags: pham nhan tu tien prc full, truyen tien hiep</p>',
             'source' => 'truyenfull.vn',
-            'status' => '0',
+            'status' => '1',
             'image'=> 'pham-nhan-tu-tien.jpg',
             'keyword' => 'PHÀM NHÂN TU TIÊN',
             'description' => '<p>mtn</p>',
@@ -239,10 +239,27 @@ class StoryTableSeeder extends Seeder
             <br />
             V&agrave; nh&acirc;n vật phụ đ&atilde; phải xuy&ecirc;n qua bao nhi&ecirc;u kh&ocirc;ng gian mới t&igrave;m được t&igrave;nh y&ecirc;u của m&igrave;nh?</p>',
             'source' => 'truyenfull.vn',
-            'status' => '0',
+            'status' => '1',
             'image'=> 'boss-la-nu-phu-270720.jpg',
             'keyword' => 'BOSS LÀ NỮ PHỤ',
             'description' => '<p>mtn</p>',
+            'user_id' => '1'
+        ]);
+
+        $story15 = Story::create([
+            'name' => 'ĐẤU PHÁ THƯƠNG KHUNG',
+            'content' => '<p>-&nbsp;<strong>Đấu Ph&aacute; Thương Khung</strong>&nbsp;l&agrave; một c&acirc;u chuyện huyền huyễn đặc sắc kể về Ti&ecirc;u Vi&ecirc;m, một thi&ecirc;n chi ki&ecirc;u tử với thi&ecirc;n ph&uacute; tu luyện m&agrave; ai ai cũng h&acirc;m mộ, bỗng một ng&agrave;y người mẹ mất đi đễ lại di vật l&agrave; một chiếc giới chỉ m&agrave;u đen nhưng từ khi đ&oacute; Ti&ecirc;u Vi&ecirc;m đ&atilde; mất đi thi&ecirc;n ph&uacute; tu luyện của m&igrave;nh.<br />
+            <br />
+            - Từ thi&ecirc;n t&agrave;i rớt xuống l&agrave;m phế vật trong 3 năm, rồi bị vị h&ocirc;n th&ecirc; thẳng thừng từ h&ocirc;n, l&agrave;m dấy l&ecirc;n &yacute; ch&iacute; nam nhi của m&igrave;nh, Ti&ecirc;u Vi&ecirc;m nhờ di vật của mẫu th&acirc;n để lại l&agrave; 1 chiếc hắc giới chỉ (nhẫn m&agrave;u đen)Ti&ecirc;u Vi&ecirc;m gặp được hồn của Dược L&atilde;o (Dược Trần &ndash; Dược t&ocirc;n giả) 1 đại luyện dược t&ocirc;ng sư của đấu kh&iacute; đại lục&hellip;<br />
+            <br />
+            - Từ đ&oacute; cuộc đời của Ti&ecirc;u Vi&ecirc;m c&oacute; những biến h&oacute;a g&igrave;? Gặp được c&aacute;c đại ngộ g&igrave;? Th&acirc;n phận thật sự của Hu&acirc;n Nhi (thanh mai tr&uacute;c m&atilde; l&uacute;c nhỏ của Ti&ecirc;u Vi&ecirc;m) ra sao? B&iacute; mật của gia tộc hắn l&agrave; g&igrave;? C&ugrave;ng theo d&otilde;i bộ truyện Đấu Ph&aacute; Thương Khung để c&oacute; thể giải đ&aacute;p c&aacute;c thắc mắc n&agrave;y c&aacute;c bạn nh&eacute;!<br />
+            <br />
+            - Tags:&nbsp;<strong>dau pha thuong khung full prc</strong>, truyen huyen huyen</p>',
+            'source' => 'truyenfull.vn',
+            'status' => '1',
+            'image'=> 'truyen-dau-pha-thuong-khung.jpg',
+            'keyword' => 'ĐẤU PHÁ THƯƠNG KHUNG',
+            'description' => '<p>Giới Thiệu Truyện</p>',
             'user_id' => '1'
         ]);
 
@@ -289,6 +306,10 @@ class StoryTableSeeder extends Seeder
         $story14->category()->attach($category3);
         $story14->category()->attach($category4);
 
+        $story15->category()->attach($category8);
+        $story15->category()->attach($category3);
+        $story15->category()->attach($category2);
+
         $author1 = Author::where('name','Thập Nguyệt Sơ')->first();
         $author2 = Author::where('name','Mặc Linh')->first();
         $author3 = Author::where('name','Quẫn Quẫn Hữu Yêu')->first();
@@ -315,6 +336,6 @@ class StoryTableSeeder extends Seeder
         $story12->author()->attach($author12);
         $story13->author()->attach($author7);
         $story14->author()->attach($author2);
-
+        $story15->author()->attach($author10);
     }
 }
