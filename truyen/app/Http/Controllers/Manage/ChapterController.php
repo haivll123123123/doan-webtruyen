@@ -55,7 +55,7 @@ class ChapterController extends Controller
         $validatedData =$request->validate([
             'subname' => 'required|max:35',
             'name' => 'required',
-            'content' => 'required|max:255|',
+            'content' => 'required|',
         ],$messages);
 
         $chapter = new Chapter;
@@ -124,7 +124,7 @@ class ChapterController extends Controller
         $validatedData =$request->validate([
             'subname' => 'required|max:35',
             'name' => 'required',
-            'content' => 'required|max:255|',
+            'content' => 'required',
         ],$messages);
 
         $data = array(

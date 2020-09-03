@@ -190,12 +190,6 @@ class StoryController extends Controller
 
         $file->move('images' , $file->getClientOriginalName());
 
-        $Image = public_path("/images/{$story->image}"); //Finding users previous picture
-
-        if(file_exists($Image)){ //If it exits, delete it from folder
-            unlink($Image);
-        }
-
         $data= array(
             'name' => $request->name,
             'content' => $request->content,
@@ -206,7 +200,26 @@ class StoryController extends Controller
             'status' => $request->status
         );
 
-        Story::where('id',$story->id)->update($data);
+        if($story->image == ''){
+            Story::where('id',$story->id)->update($data);
+        }else{
+
+            if($story->image == $file->getClientOriginalName()){
+
+                Story::where('id',$story->id)->update($data);
+
+            }else{
+                $Image = public_path("/images/{$story->image}"); //Finding users previous picture
+
+                if(file_exists($Image)){ //If it exits, delete it from folder
+                    unlink($Image);
+                }
+
+                Story::where('id',$story->id)->update($data);
+            }
+        }
+
+
 
         $items_category = $request->get('category');
         $selected_items = '';
