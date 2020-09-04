@@ -201,7 +201,16 @@
                 <span class="glyphicon glyphicon-chevron-right"></span>
                 <h3 itemprop="name"><a href="#" title="{{$chapters->name}}" itemprop="url">{{$chapters->name}}</a></h3>
             </div>
-            <div class="hidden-xs col-sm-3 col-md-3 col-cat text-888"><a itemprop="genre" href="#" title="Đô Thị">Category</a>, <a itemprop="genre" href="#" title="Huyền Huyễn">Category</a></div>
+
+            <div class="hidden-xs col-sm-3 col-md-3 col-cat text-888">
+                @foreach($chapters->story->category as $chap)
+                <a itemprop="genre" href="#" title="Đô Thị">
+                    {{$loop->first ? '' : ', '}}
+                    {{$chap->name}}
+                </a>
+                @endforeach
+            </div>
+
             <div class="col-xs-3 col-sm-3 col-md-2 col-chap text-info"><a href="#" title="Trở Về Từ Địa Ngục - Chương 13"><span class="chapter-text"><span>{{$chapters->subname}}</span></a></div>
             <div class="hidden-xs hidden-sm col-md-2 col-time text-888">Nothing</div>
         </div>

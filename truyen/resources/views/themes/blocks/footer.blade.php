@@ -7,8 +7,9 @@
         </ul>
     </div>
 </div>
-<script src="{{asset('themes/themes.js')}}"></script>
+{{-- <script src="{{asset('themes/themes.js')}}"></script> --}}
+<script src="{{asset('themes/mainjs-030920.js')}}"></script>
 <noscript>
     <link rel="stylesheet" type="text/css" href="{{asset('themes/themes2.css')}}"/>
 </noscript>
-<script>$('head').append('<link rel="stylesheet" type="text/css" href="{{asset('themes/themes.css')}}"/>');</script>
+<script>$('head').append('<link rel="stylesheet" type="text/css" href="https://static.8cache.com/min/g/maincss-160820-2.css"/>');</script>

@@ -1,8 +1,8 @@
 <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# book: http://ogp.me/ns/book# profile: http://ogp.me/ns/profile#">
     <meta charset="UTF-8">
-    <title>Đọc truyện online, đọc truyện hay</title>
+    <title>Truyện chữ mới</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-    <meta name="description" content="Đọc truyện online, đọc truyện chữ, truyện hay, truyện full. Truyện Full luôn tổng hợp và cập nhật các chương truyện một cách nhanh nhất.">
-    <meta name="keywords" content="doc truyen, doc truyen online, truyen hay, truyen chu">
+    <meta name="description" content="Danh sách truyện chữ được cập nhật (vừa ra mắt, thêm chương mới, sửa nội dung,..) gần đây.">
+    <meta name="keywords" content="Truyện mới cập nhật, truyen moi cap nhat, danh sach truyen moi cap nhat">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 </head>

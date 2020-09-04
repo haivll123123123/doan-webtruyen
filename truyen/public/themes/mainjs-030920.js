@@ -122,16 +122,13 @@
 				if (g) {
 					for (; f > e; e++)
 						if (d = b.apply(a[e], c), d === !1) break
-				}
-				else
+				} else
 					for (e in a)
 						if (d = b.apply(a[e], c), d === !1) break
-			}
-			else if (g) {
+			} else if (g) {
 				for (; f > e; e++)
 					if (d = b.call(a[e], e, a[e]), d === !1) break
-			}
-			else
+			} else
 				for (e in a)
 					if (d = b.call(a[e], e, a[e]), d === !1) break;
 			return a
@@ -242,8 +239,7 @@
 			};
 		try {
 			I.apply(F = J.call(v.childNodes), v.childNodes), F[v.childNodes.length].nodeType
-		}
-		catch (eb) {
+		} catch (eb) {
 			I = {
 				apply: F.length ? function (a, b) {
 					H.apply(a, J.call(b))
@@ -266,13 +262,11 @@
 						if (9 === k) {
 							if (h = b.getElementById(j), !h || !h.parentNode) return d;
 							if (h.id === j) return d.push(h), d
-						}
-						else if (b.ownerDocument && (h = b.ownerDocument.getElementById(j)) && t(b, h) && h.id === j) return d.push(h), d
+						} else if (b.ownerDocument && (h = b.ownerDocument.getElementById(j)) && t(b, h) && h.id === j) return d.push(h), d
+					} else {
+						if (f[2]) return I.apply(d, b.getElementsByTagName(a)), d;
+						if ((j = f[3]) && c.getElementsByClassName && b.getElementsByClassName) return I.apply(d, b.getElementsByClassName(j)), d
 					}
-				else {
-					if (f[2]) return I.apply(d, b.getElementsByTagName(a)), d;
-					if ((j = f[3]) && c.getElementsByClassName && b.getElementsByClassName) return I.apply(d, b.getElementsByClassName(j)), d
-				}
 				if (c.qsa && (!q || !q.test(a))) {
 					if (s = r = u, w = b, x = 9 === k && a, 1 === k && "object" !== b.nodeName.toLowerCase()) {
 						o = g(a), (r = b.getAttribute("id")) ? s = r.replace(bb, "\\$&") : b.setAttribute("id", s), s = "[id='" + s + "'] ", l = o.length;
@@ -281,9 +275,7 @@
 					}
 					if (x) try {
 						return I.apply(d, w.querySelectorAll(x)), d
-					}
-					catch (y) {}
-					finally {
+					} catch (y) {} finally {
 						r || b.removeAttribute("id")
 					}
 				}
@@ -308,11 +300,9 @@
 			var b = n.createElement("div");
 			try {
 				return !!a(b)
-			}
-			catch (c) {
+			} catch (c) {
 				return !1
-			}
-			finally {
+			} finally {
 				b.parentNode && b.parentNode.removeChild(b), b = null
 			}
 		}
@@ -449,8 +439,7 @@
 			if ((a.ownerDocument || a) !== n && m(a), b = b.replace(U, "='$1']"), !(!c.matchesSelector || !p || r && r.test(b) || q && q.test(b))) try {
 				var d = s.call(a, b);
 				if (d || c.disconnectedMatch || a.document && 11 !== a.document.nodeType) return d
-			}
-			catch (e) {}
+			} catch (e) {}
 			return fb(b, n, null, [a]).length > 0
 		}, fb.contains = function (a, b) {
 			return (a.ownerDocument || a) !== n && m(a), t(a, b)
@@ -478,10 +467,8 @@
 				if (1 === f || 9 === f || 11 === f) {
 					if ("string" == typeof a.textContent) return a.textContent;
 					for (a = a.firstChild; a; a = a.nextSibling) c += e(a)
-				}
-				else if (3 === f || 4 === f) return a.nodeValue
-			}
-			else
+				} else if (3 === f || 4 === f) return a.nodeValue
+			} else
 				while (b = a[d++]) c += e(b);
 			return c
 		}, d = fb.selectors = {
@@ -567,8 +554,7 @@
 										k[a] = [w, n, m];
 										break
 									}
-							}
-							else if (s && (j = (b[u] || (b[u] = {}))[a]) && j[0] === w) m = j[1];
+							} else if (s && (j = (b[u] || (b[u] = {}))[a]) && j[0] === w) m = j[1];
 							else
 								while (l = ++n && l && l[p] || (m = n = 0) || o.pop())
 									if ((h ? l.nodeName.toLowerCase() === r : 1 === l.nodeType) && ++m && (s && ((l[u] || (l[u] = {}))[a] = [w, m]), l === b)) break;
@@ -740,8 +726,7 @@
 				if (g) {
 					while (b = b[d])
 						if ((1 === b.nodeType || e) && a(b, c, g)) return !0
-				}
-				else
+				} else
 					while (b = b[d])
 						if (1 === b.nodeType || e) {
 							if (i = b[u] || (b[u] = {}), (h = i[d]) && h[0] === w && h[1] === f) return j[2] = h[2];
@@ -791,8 +776,7 @@
 						k = r.length;
 						while (k--)(l = r[k]) && (j = e ? K.call(f, l) : m[k]) > -1 && (f[j] = !(g[j] = l))
 					}
-				}
-				else r = ub(r === g ? r.splice(o, r.length) : r), e ? e(null, g, r, i) : I.apply(g, r)
+				} else r = ub(r === g ? r.splice(o, r.length) : r), e ? e(null, g, r, i) : I.apply(g, r)
 			})
 		}
 
@@ -1218,8 +1202,7 @@
 		if ("object" === n.type(c)) {
 			e = !0;
 			for (h in c) n.access(a, b, h, c[h], !0, f, g)
-		}
-		else if (void 0 !== d && (e = !0, n.isFunction(d) || (g = !0), j && (g ? (b.call(a, d), b = null) : (j = b, b = function (a, b, c) {
+		} else if (void 0 !== d && (e = !0, n.isFunction(d) || (g = !0), j && (g ? (b.call(a, d), b = null) : (j = b, b = function (a, b, c) {
 				return j.call(n(a), c)
 			})), b))
 			for (; i > h; h++) b(a[h], c, g ? d : d.call(a[h], h, b(a[h], c)));
@@ -1247,8 +1230,7 @@
 					b[this.expando] = {
 						value: c
 					}, Object.defineProperties(a, b)
-				}
-				catch (d) {
+				} catch (d) {
 					b[this.expando] = c, n.extend(a, b)
 				}
 			}
@@ -1298,11 +1280,9 @@
 			if (d = "data-" + b.replace(O, "-$1").toLowerCase(), c = a.getAttribute(d), "string" == typeof c) {
 				try {
 					c = "true" === c ? !0 : "false" === c ? !1 : "null" === c ? null : +c + "" === c ? +c : N.test(c) ? n.parseJSON(c) : c
-				}
-				catch (e) {}
+				} catch (e) {}
 				M.set(a, b, c)
-			}
-		else c = void 0;
+			} else c = void 0;
 		return c
 	}
 	n.extend({
@@ -1341,8 +1321,7 @@
 					if (c = M.get(f, a), void 0 !== c) return c;
 					if (c = M.get(f, d), void 0 !== c) return c;
 					if (c = P(f, d, void 0), void 0 !== c) return c
-				}
-				else this.each(function () {
+				} else this.each(function () {
 					var c = M.get(this, d);
 					M.set(this, d, b), -1 !== a.indexOf("-") && void 0 !== c && M.set(this, a, b)
 				})
@@ -1436,8 +1415,7 @@
 	function _() {
 		try {
 			return l.activeElement
-		}
-		catch (a) {}
+		} catch (a) {}
 	}
 	n.event = {
 		global: {},
@@ -1468,9 +1446,8 @@
 						l = n.event.special[o] || {}, o = (d ? l.delegateType : l.bindType) || o, m = i[o] || [], h = h[2] && new RegExp("(^|\\.)" + p.join("\\.(?:.*\\.|)") + "(\\.|$)"), g = f = m.length;
 						while (f--) k = m[f], !e && q !== k.origType || c && c.guid !== k.guid || h && !h.test(k.namespace) || d && d !== k.selector && ("**" !== d || !k.selector) || (m.splice(f, 1), k.selector && m.delegateCount--, l.remove && l.remove.call(a, k));
 						g && !m.length && (l.teardown && l.teardown.call(a, p, r.handle) !== !1 || n.removeEvent(a, o, r.handle), delete i[o])
-					}
-				else
-					for (o in i) n.event.remove(a, o + b[j], c, d, !0);
+					} else
+						for (o in i) n.event.remove(a, o + b[j], c, d, !0);
 				n.isEmptyObject(i) && (delete r.handle, L.remove(a, "events"))
 			}
 		},
@@ -1754,8 +1731,7 @@
 				f = f || k.appendChild(b.createElement("div")), g = (bb.exec(e) || ["", ""])[1].toLowerCase(), h = ib[g] || ib._default, f.innerHTML = h[1] + e.replace(ab, "<$1></$2>") + h[2], j = h[0];
 				while (j--) f = f.lastChild;
 				n.merge(l, f.childNodes), f = k.firstChild, f.textContent = ""
-			}
-			else l.push(b.createTextNode(e));
+			} else l.push(b.createTextNode(e));
 			k.textContent = "", m = 0;
 			while (e = l[m++])
 				if ((!d || -1 === n.inArray(e, d)) && (i = n.contains(e.ownerDocument, e), f = ob(k.appendChild(e), "script"), i && mb(f), c)) {
@@ -1832,8 +1808,7 @@
 					try {
 						for (; d > c; c++) b = this[c] || {}, 1 === b.nodeType && (n.cleanData(ob(b, !1)), b.innerHTML = a);
 						b = 0
-					}
-					catch (e) {}
+					} catch (e) {}
 				}
 				b && this.empty().append(a)
 			}, null, a, arguments.length)
@@ -2183,8 +2158,7 @@
 					p = !0
 				}
 				m[d] = q && q[d] || n.style(a, d)
-			}
-		else j = void 0;
+			} else j = void 0;
 		if (n.isEmptyObject(m)) "inline" === ("none" === j ? tb(a.nodeName) : j) && (o.display = j);
 		else {
 			q ? "hidden" in q && (p = q.hidden) : q = L.access(a, "fxshow", {}), f && (q.hidden = !p), p ? n(a).show() : l.done(function () {
@@ -2204,8 +2178,7 @@
 			if (d = n.camelCase(c), e = b[d], f = a[c], n.isArray(f) && (e = f[1], f = a[c] = f[0]), c !== d && (a[d] = f, delete a[c]), g = n.cssHooks[d], g && "expand" in g) {
 				f = g.expand(f), delete a[d];
 				for (c in f) c in a || (a[c] = f[c], b[c] = e)
-			}
-		else b[d] = e
+			} else b[d] = e
 	}
 
 	function Xb(a, b, c) {
@@ -2484,8 +2457,7 @@
 						e = n(this),
 						f = a.match(E) || [];
 					while (b = f[d++]) e.hasClass(b) ? e.removeClass(b) : e.addClass(b)
-				}
-				else(c === U || "boolean" === c) && (this.className && L.set(this, "__className__", this.className), this.className = this.className || a === !1 ? "" : L.get(this, "__className__") || "")
+				} else(c === U || "boolean" === c) && (this.className && L.set(this, "__className__", this.className), this.className = this.className || a === !1 ? "" : L.get(this, "__className__") || "")
 			})
 		},
 		hasClass: function (a) {
@@ -2571,8 +2543,7 @@
 		if (!a || "string" != typeof a) return null;
 		try {
 			c = new DOMParser, b = c.parseFromString(a, "text/xml")
-		}
-		catch (d) {
+		} catch (d) {
 			b = void 0
 		}
 		return (!b || b.getElementsByTagName("parsererror").length) && n.error("Invalid XML: " + a), b
@@ -2589,8 +2560,7 @@
 		pc = "*/".concat("*");
 	try {
 		fc = location.href
-	}
-	catch (qc) {
+	} catch (qc) {
 		fc = l.createElement("a"), fc.href = "", fc = fc.href
 	}
 	ec = mc.exec(fc.toLowerCase()) || [];
@@ -2669,13 +2639,12 @@
 				if (g && a["throws"]) b = g(b);
 				else try {
 					b = g(b)
+				} catch (l) {
+					return {
+						state: "parsererror",
+						error: g ? l : "No conversion from " + i + " to " + f
+					}
 				}
-			catch (l) {
-				return {
-					state: "parsererror",
-					error: g ? l : "No conversion from " + i + " to " + f
-				}
-			}
 		}
 		return {
 			state: "success",
@@ -2791,13 +2760,11 @@
 				}, k.timeout));
 				try {
 					t = 1, c.send(r, x)
-				}
-				catch (w) {
+				} catch (w) {
 					if (!(2 > t)) throw w;
 					x(-1, w)
 				}
-			}
-			else x(-1, "No Transport");
+			} else x(-1, "No Transport");
 
 			function x(a, b, f, h) {
 				var j, r, s, u, w, x = b;
@@ -2923,8 +2890,7 @@
 	}), n.ajaxSettings.xhr = function () {
 		try {
 			return new XMLHttpRequest
-		}
-		catch (a) {}
+		} catch (a) {}
 	};
 	var Cc = 0,
 		Dc = {},
@@ -2954,8 +2920,7 @@
 				}, f.onload = b(), f.onerror = b("error"), b = Dc[g] = b("abort");
 				try {
 					f.send(a.hasContent && a.data || null)
-				}
-				catch (h) {
+				} catch (h) {
 					if (b) throw h
 				}
 			},
@@ -3135,11 +3100,9 @@
 (function (factory) {
 	if (typeof define === 'function' && define.amd) {
 		define(['jquery'], factory);
-	}
-	else if (typeof exports === 'object') {
+	} else if (typeof exports === 'object') {
 		factory(require('jquery'));
-	}
-	else {
+	} else {
 		factory(jQuery);
 	}
 }(function ($) {
@@ -3164,8 +3127,7 @@
 		try {
 			s = decodeURIComponent(s.replace(pluses, ' '));
 			return config.json ? JSON.parse(s) : s;
-		}
-		catch (e) {}
+		} catch (e) {}
 	}
 
 	function read(s, converter) {
@@ -3425,8 +3387,7 @@ if ("undefined" == typeof jQuery) throw new Error("Bootstrap's JavaScript requir
 				methods._target.call(this, this.opt.score);
 				if (this.opt.readOnly) {
 					methods._lock.call(this);
-				}
-				else {
+				} else {
 					this.style.cursor = 'pointer';
 					methods._binds.call(this);
 				}
@@ -3589,8 +3550,7 @@ if ("undefined" == typeof jQuery) throw new Error("Bootstrap's JavaScript requir
 					icon = that.opt.cancelOn;
 				if (that.opt.starType === 'img') {
 					that.stars.attr('src', starOff);
-				}
-				else {
+				} else {
 					icon = that.opt.cancelClass + ' ' + icon;
 					that.stars.attr('class', starOff);
 				}
@@ -3618,14 +3578,12 @@ if ("undefined" == typeof jQuery) throw new Error("Bootstrap's JavaScript requir
 					src: icon,
 					alt: 'x'
 				});
-			}
-			else {
+			} else {
 				cancel.attr('data-alt', 'x').addClass(icon);
 			}
 			if (this.opt.cancelPlace === 'left') {
 				this.self.prepend('&#160;').prepend(cancel);
-			}
-			else {
+			} else {
 				this.self.append('&#160;').append(cancel);
 			}
 			this.cancel = cancel;
@@ -3675,8 +3633,7 @@ if ("undefined" == typeof jQuery) throw new Error("Bootstrap's JavaScript requir
 					if (i === irange.range) {
 						hash++;
 					}
-				}
-				else {
+				} else {
 					icon = this.opt[turnOn ? 'starOn' : 'starOff'];
 					methods._setIcon.call(this, star, icon);
 				}
@@ -3722,8 +3679,7 @@ if ("undefined" == typeof jQuery) throw new Error("Bootstrap's JavaScript requir
 					decimal = decimal === 0 ? 9 : decimal - 1;
 				}
 				hint = group[decimal];
-			}
-			else if (this.opt.halfShow || this.opt.half) {
+			} else if (this.opt.halfShow || this.opt.half) {
 				decimal = set && decimal === 0 ? 1 : decimal > 5 ? 1 : 0;
 				hint = group[decimal];
 			}
@@ -3769,13 +3725,11 @@ if ("undefined" == typeof jQuery) throw new Error("Bootstrap's JavaScript requir
 				name;
 			if (evt || this.move) {
 				name = decimal > 0.5 ? 'starOn' : 'starHalf';
-			}
-			else if (decimal > this.opt.round.down) {
+			} else if (decimal > this.opt.round.down) {
 				name = 'starOn';
 				if (this.opt.halfShow && decimal < this.opt.round.up) {
 					name = 'starHalf';
-				}
-				else if (decimal < this.opt.round.full) {
+				} else if (decimal < this.opt.round.full) {
 					name = 'starOff';
 				}
 			}
@@ -3795,8 +3749,7 @@ if ("undefined" == typeof jQuery) throw new Error("Bootstrap's JavaScript requir
 			}
 			if (target.is(':input')) {
 				target.val(score);
-			}
-			else {
+			} else {
 				target.html(score);
 			}
 		},
@@ -3817,15 +3770,12 @@ if ("undefined" == typeof jQuery) throw new Error("Bootstrap's JavaScript requir
 				var mouseover = evt && evt.type === 'mouseover';
 				if (score === undefined) {
 					score = this.opt.targetText;
-				}
-				else if (score === null) {
+				} else if (score === null) {
 					score = mouseover ? this.opt.cancelHint : this.opt.targetText;
-				}
-				else {
+				} else {
 					if (this.opt.targetType === 'hint') {
 						score = methods._getHint.call(this, score, evt);
-					}
-					else if (this.opt.precision) {
+					} else if (this.opt.precision) {
 						score = parseFloat(score).toFixed(1);
 					}
 					var mousemove = evt && evt.type === 'mousemove';
@@ -3880,8 +3830,7 @@ if ("undefined" == typeof jQuery) throw new Error("Bootstrap's JavaScript requir
 					self.off('.raty').empty().css({
 						cursor: raw.style.cursor
 					}).removeData('readonly');
-				}
-				else {
+				} else {
 					self.data('raw', self.clone()[0]);
 				}
 			});
@@ -3924,8 +3873,7 @@ if ("undefined" == typeof jQuery) throw new Error("Bootstrap's JavaScript requir
 					if (readonly) {
 						self.off('.raty').children('img').off('.raty');
 						methods._lock.call(this);
-					}
-					else {
+					} else {
 						methods._binds.call(this);
 						methods._unlock.call(this);
 					}
@@ -3958,11 +3906,9 @@ if ("undefined" == typeof jQuery) throw new Error("Bootstrap's JavaScript requir
 	$.fn.raty = function (method) {
 		if (methods[method]) {
 			return methods[method].apply(this, Array.prototype.slice.call(arguments, 1));
-		}
-		else if (typeof method === 'object' || !method) {
+		} else if (typeof method === 'object' || !method) {
 			return methods.init.apply(this, arguments);
-		}
-		else {
+		} else {
 			$.error('Method ' + method + ' does not exist!');
 		}
 	};
@@ -4247,8 +4193,7 @@ if ("undefined" == typeof jQuery) throw new Error("Bootstrap's JavaScript requir
 								var c = e++;
 								n.push(u.replace(/(\/?>)/, " " + d + "id=" + c + " $1")), s.attrs.id !== m && s.attrs.id !== y && o.push("atomicTag" === s.type ? "" : "<" + s.tagName + " " + d + "proxyof=" + c + (s.unary ? " />" : ">"))
 							}
-						}
-						else n.push(u), o.push("endTag" === s.type ? u : "")
+						} else n.push(u), o.push("endTag" === s.type ? u : "")
 					}
 					return {
 						"tokens": t,
@@ -4303,8 +4248,7 @@ if ("undefined" == typeof jQuery) throw new Error("Bootstrap's JavaScript requir
 					}));
 					try {
 						this._insertCursor(r, m), r.src && !n || e()
-					}
-					catch (t) {
+					} catch (t) {
 						this.options.error(t), e()
 					}
 				}, t.prototype._buildScript = function (t) {
@@ -4334,8 +4278,7 @@ if ("undefined" == typeof jQuery) throw new Error("Bootstrap's JavaScript requir
 						"onload": function () {
 							if (t._onload) try {
 								t._onload.apply(this, Array.prototype.slice.call(arguments, 0))
-							}
-							catch (e) {
+							} catch (e) {
 								o({
 									"msg": "onload handler failed " + e + " @ " + t.src
 								})
@@ -4345,8 +4288,7 @@ if ("undefined" == typeof jQuery) throw new Error("Bootstrap's JavaScript requir
 						"onerror": function () {
 							if (t._onerror) try {
 								t._onerror.apply(this, Array.prototype.slice.call(arguments, 0))
-							}
-							catch (e) {
+							} catch (e) {
 								return void o({
 									"msg": "onerror handler failed " + e + " @ " + t.src
 								})
@@ -4486,14 +4428,12 @@ if ("undefined" == typeof jQuery) throw new Error("Bootstrap's JavaScript requir
 				try {
 					var i = "<P><I></P></I>";
 					o.innerHTML = i, e.tagSoup = r = o.innerHTML !== i
-				}
-				catch (t) {
+				} catch (t) {
 					e.tagSoup = r = !1
 				}
 				try {
 					o.innerHTML = "<P><i><P></P></i></P>", e.selfClose = n = 2 === o.childNodes.length
-				}
-				catch (t) {
+				} catch (t) {
 					e.selfClose = n = !1
 				}
 				o = null, e.tagSoup = r, e.selfClose = n
@@ -4718,8 +4658,7 @@ if ("undefined" == typeof jQuery) throw new Error("Bootstrap's JavaScript requir
 		function s(t) {
 			try {
 				return Array.prototype.slice.call(t)
-			}
-			catch (r) {
+			} catch (r) {
 				var e = function () {
 					var e = [];
 					return o(t, function (t) {

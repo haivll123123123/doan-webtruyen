@@ -24,7 +24,8 @@ class ThemesController extends Controller
         $story11 = Story::where('name','ĐẤU PHÁ THƯƠNG KHUNG')->first();
         $story12 = Story::where('name','PHÀM NHÂN TU TIÊN')->first();
         $story13 = Story::where('name','VŨ LUYỆN ĐIÊN PHONG')->first();
-        $chapter = Chapter::with('story')->get();
+        $chapter = Chapter::with('story.category')->orderBy('id', 'DESC')->get();
+
         // $category1 = Category::where('id','<=','13')->get();
         // $category2 = Category::where([
         //     ['id' , '>=' , '14'],
@@ -57,6 +58,39 @@ class ThemesController extends Controller
             'category1' => $category1,
             'category2' => $category2,
             'category3' => $category3,
+        ]);
+    }
+
+    public function truyenmoi(){
+
+        $category1 = Category::whereBetween('id',[1,13])->get();
+        $category2 = Category::whereBetween('id',[14,26])->get();
+        $category3 = Category::whereBetween('id',[27,37])->get();
+        $story = Story::with('author')->get();
+        $chapter = Chapter::with('story')->pluck('subname','story_id')->toArray();
+        // dd($chapter);
+        return view('themes.newstoryupdate')->with([
+            'category1' => $category1,
+            'category2' => $category2,
+            'category3' => $category3,
+            'chapter' => $chapter,
+            'story' => $story
+        ]);
+    }
+
+    public function truyenfull(){
+        $category1 = Category::whereBetween('id',[1,13])->get();
+        $category2 = Category::whereBetween('id',[14,26])->get();
+        $category3 = Category::whereBetween('id',[27,37])->get();
+        $story = Story::with('author')->get();
+        $chapter = Chapter::with('story')->pluck('subname','story_id')->toArray();
+        // dd($chapter);
+        return view('themes.truyenfull')->with([
+            'category1' => $category1,
+            'category2' => $category2,
+            'category3' => $category3,
+            'chapter' => $chapter,
+            'story' => $story
         ]);
     }
 }

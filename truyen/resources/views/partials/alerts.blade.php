@@ -13,3 +13,4 @@
     {{session('error')}}
   </div>
 @endif
+{{-- echo strip_tags(first()->content)  --}}

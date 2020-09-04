@@ -3,7 +3,7 @@
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="sr-only">Hiện menu</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-            <h1><a class="header-logo" href="" title="doc truyen">doc truyen</a></h1>
+            <h1><a class="header-logo" href="{{route('trangchu')}}" title="doc truyen">doc truyen</a></h1>
         </div>
         <div class="navbar-collapse collapse" itemscope itemtype="">
             <meta itemprop="url" content="" />
@@ -11,9 +11,9 @@
                 <li class="dropdown">
                     <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-list"></span> Danh sách <span class="caret"></span></a>
                     <ul class="dropdown-menu" role="menu">
-                        <li><a href="javascript:void(0)" title="Truyện mới cập nhật">Truyện mới cập nhật</a></li>
+                        <li><a href="{{route('truyenmoi')}}" title="Truyện mới cập nhật">Truyện mới cập nhật</a></li>
                         <li><a href="javascript:void(0)" title="Truyện Hot">Truyện Hot</a></li>
-                        <li><a href="javascript:void(0)" title="Truyện Full">Truyện Full</a></li>
+                        <li><a href="{{route('truyenfull')}}" title="Truyện Full">Truyện Full</a></li>
                     </ul>
                 </li>
                 <li class="dropdown">

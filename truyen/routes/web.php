@@ -13,7 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 Route::get('trangchu','Manage\ThemesController@trangchu')->name('trangchu');
-
+Route::get('danh-sach/truyen-moi','Manage\ThemesController@truyenmoi')->name('truyenmoi');
+Route::get('danh-sach/truyen-hoan-thanh','Manage\ThemesController@truyenfull')->name('truyenfull');
 Route::get('/', function () {
     return view('welcome');
 });
