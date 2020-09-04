@@ -4,9 +4,11 @@ namespace App\Http\Controllers\Manage;
 
 use App\Models\Story;
 use App\Models\Chapter;
+use App\Models\Author;
 use App\Models\Category;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+
 
 class ThemesController extends Controller
 {
@@ -57,6 +59,37 @@ class ThemesController extends Controller
             'category1' => $category1,
             'category2' => $category2,
             'category3' => $category3,
+        ]);
+    }
+
+    public function notruyen(Story $story){
+        $category1 = Category::whereBetween('id',[1,13])->get();
+        $category2 = Category::whereBetween('id',[14,26])->get();
+        $category3 = Category::whereBetween('id',[27,37])->get();
+        $story = Story::with('author','category')->where('id',$story->id)->first();
+        $chapter = Chapter::with('story')->where('story_id',$story->id)->get();
+//dd($authors);
+        return view('themes.no-story')->with([
+            'category1' => $category1,
+            'category2' => $category2,
+            'category3' => $category3,
+            'story' => $story,
+            'chapter'=>$chapter,
+        ]);
+    }
+    public function chuong(Story $story){
+        $category1 = Category::whereBetween('id',[1,13])->get();
+        $category2 = Category::whereBetween('id',[14,26])->get();
+        $category3 = Category::whereBetween('id',[27,37])->get();
+        $story = Story::with('author','category')->where('id',$story->id)->first();
+        $chapter = Chapter::with('story')->where('story_id',$story->id)->get();
+//dd($chapter);
+        return view('themes.chuong')->with([
+            'category1' => $category1,
+            'category2' => $category2,
+            'category3' => $category3,
+            'story' => $story,
+            'chapter'=>$chapter,
         ]);
     }
 }

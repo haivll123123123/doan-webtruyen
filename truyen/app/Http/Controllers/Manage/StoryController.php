@@ -85,7 +85,6 @@ class StoryController extends Controller
         $file->move('images' , $file->getClientOriginalName());
 
         $story = Story::create($request->all());
-
         $story->user_id = auth()->user()->id;
         $story->image = $file->getClientOriginalName();
         $story->save();

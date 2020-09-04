@@ -12,7 +12,8 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('trangchu','Manage\ThemesController@trangchu')->name('trangchu');
+
+
 
 Route::get('/', function () {
     return view('welcome');
@@ -21,6 +22,13 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+
+Route::get('trangchu','Manage\ThemesController@trangchu')->name('trangchu');
+Route::get('{story}','Manage\ThemesController@notruyen')->name('tencuatruyen');
+Route::get('{chuong}','Manage\ThemesController@chuong')->name('chuong');
+
 
 Route::namespace('Manage')->prefix('manage')->name('manage.')->group(function(){
     // Route::resource('/user', 'UsersController',['except' => ['create','show','store']]);

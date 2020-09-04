@@ -11,7 +11,7 @@
     </div>
     <div class="index-intro">
         <div class="item top-1" itemscope itemtype="#">
-            <a href="#=" itemprop="url">
+            <a href="{{route('tencuatruyen',$story1)}}" itemprop="url">
                 @if ($story1->status == 1)
                 <span class="full-label"></span>
                 @else
@@ -24,7 +24,7 @@
             </a>
         </div>
         <div class="item top-2" itemscope itemtype="#">
-            <a href="#" itemprop="url">
+            <a href="{{route('tencuatruyen',$story2)}}" itemprop="url">
                 @if ($story2->status == 1)
                 <span class="full-label"></span>
                 @else
@@ -38,7 +38,7 @@
             </a>
         </div>
         <div class="item top-3" itemscope itemtype="#">
-            <a href="#" itemprop="url">
+            <a href="{{route('tencuatruyen',$story3)}}" itemprop="url">
                 @if ($story3->status == 1)
                 <span class="full-label"></span>
                 @else
@@ -51,7 +51,7 @@
             </a>
         </div>
         <div class="item top-4" itemscope itemtype="#">
-            <a href="#" itemprop="url">
+            <a href="{{route('tencuatruyen',$story4)}}" itemprop="url">
                 @if ($story4->status == 1)
                 <span class="full-label"></span>
                 @else
@@ -64,7 +64,7 @@
             </a>
         </div>
         <div class="item top-5" itemscope itemtype="">
-            <a href="" itemprop="url">
+            <a href="{{route('tencuatruyen',$story5)}}" itemprop="url">
                 @if ($story5->status == 1)
                 <span class="full-label"></span>
                 @else
@@ -77,7 +77,7 @@
             </a>
         </div>
         <div class="item top-6" itemscope itemtype="">
-            <a href="" itemprop="url">
+            <a href="{{route('tencuatruyen',$story6)}}" itemprop="url">
                 @if ($story6->status == 1)
                 <span class="full-label"></span>
                 @else
@@ -90,7 +90,7 @@
             </a>
         </div>
         <div class="item top-7" itemscope itemtype="">
-            <a href="" itemprop="url">
+            <a href="{{route('tencuatruyen',$story7)}}" itemprop="url">
                 @if ($story7->status == 1)
                 <span class="full-label"></span>
                 @else
@@ -103,7 +103,7 @@
             </a>
         </div>
         <div class="item top-8" itemscope itemtype="">
-            <a href="" itemprop="url">
+            <a href="{{route('tencuatruyen',$story8)}}" itemprop="url">
                 @if ($story8->status == 1)
                 <span class="full-label"></span>
                 @else
@@ -116,7 +116,7 @@
             </a>
         </div>
         <div class="item top-9" itemscope itemtype="">
-            <a href="" itemprop="url">
+            <a href="{{route('tencuatruyen',$story9)}}" itemprop="url">
                 @if ($story9->status == 1)
                 <span class="full-label"></span>
                 @else
@@ -129,7 +129,7 @@
             </a>
         </div>
         <div class="item top-10" itemscope itemtype="">
-            <a href="" itemprop="url">
+            <a href="{{route('tencuatruyen',$story10)}}" itemprop="url">
                 @if ($story10->status == 1)
                 <span class="full-label"></span>
                 @else
@@ -142,7 +142,7 @@
             </a>
         </div>
         <div class="item top-11" itemscope itemtype="">
-            <a href="" itemprop="url">
+            <a href="{{route('tencuatruyen',$story11)}}" itemprop="url">
                 @if ($story11->status == 1)
                 <span class="full-label"></span>
                 @else
@@ -155,7 +155,7 @@
             </a>
         </div>
         <div class="item top-12" itemscope itemtype="">
-            <a href="" itemprop="url">
+            <a href="{{route('tencuatruyen',$story12)}}" itemprop="url">
                 @if ($story12->status == 1)
                 <span class="full-label"></span>
                 @else
@@ -168,7 +168,7 @@
             </a>
         </div>
         <div class="item top-13" itemscope itemtype="">
-            <a href="" itemprop="url">
+            <a href="{{route('tencuatruyen',$story13)}}" itemprop="url">
                 @if ($story13->status == 1)
                 <span class="full-label"></span>
                 @else
