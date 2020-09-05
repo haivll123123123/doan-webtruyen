@@ -60,6 +60,32 @@
                         </form>
                     </div>
                 </li>
+                <li class="dropdown">
+                    @if (Route::has('login'))
+                    @auth
+                    <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> {{auth()->user()->name}} <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        @if(auth()->user()->can('admin-writer') || auth()->user()->can('edit-users') || auth()->user()->can('delete-users'))
+                        <li><a href="{{route('manage.home')}}" title="Truyện mới cập nhật">Trang Quản Lí</a></li>
+                        @endcan
+                        <li><a href="{{ route('logout') }}" title="Truyện Hot"
+                        onclick="event.preventDefault();
+                        document.getElementById('logout-form').submit();">
+                        {{ __('Logout') }}</a></li>
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                            @csrf
+                        </form>
+                    </ul>
+                    @else
+                    <a href="{{ route('login') }}">Đăng Nhập</a>
+                    @if (Route::has('register'))
+                    <li class="dropdown">
+                    <a href="{{ route('register') }}"> Đăng Ký</a>
+                    </li>
+                    @endif
+                    @endauth
+                    @endif
+                </li>
             </ul>
             <form class="navbar-form navbar-right" action="#" role="search" itemprop="potentialAction" itemscope itemtype="https://schema.org/SearchAction">
                 <div class="input-group search-holder">

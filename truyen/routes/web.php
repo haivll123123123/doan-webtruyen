@@ -12,9 +12,13 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
 Route::get('trangchu','Manage\ThemesController@trangchu')->name('trangchu');
 Route::get('danh-sach/truyen-moi','Manage\ThemesController@truyenmoi')->name('truyenmoi');
 Route::get('danh-sach/truyen-hoan-thanh','Manage\ThemesController@truyenfull')->name('truyenfull');
+Route::get('duongdantentruyen/{story}','Manage\ThemesController@notruyen')->name('tencuatruyen');
+Route::get('duongdantentruyen/{story}/{chuong}','Manage\ThemesController@chuong')->name('chuong');
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -80,3 +84,4 @@ Route::namespace('Manage')->prefix('manage')->name('manage.')->group(function(){
         Route::post('storeimages','ProfileController@storeimages')->name('storeimages');
     });
 });
+Route::any('{all?}','HomeController@index')->where('all','(.*)');
